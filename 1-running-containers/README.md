@@ -14,9 +14,9 @@ docker run --name vscode codercom/code-server
 docker rm vscode
 ```
 
-🤔 runs but nor good enough
+🤔 runs but not good enough
 
-need:
+we need:
 
 * Port mapping (-p) 
 * Volume mapping (-v)
