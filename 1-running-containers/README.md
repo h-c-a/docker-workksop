@@ -53,3 +53,5 @@ Now check if it did something:
 ```
 docker logs vscode
 ```
+
+That's a wrap for the docker run. Let's [move on to the next section](https://github.com/h-c-a/docker-workshop/tree/master/2-building-images).

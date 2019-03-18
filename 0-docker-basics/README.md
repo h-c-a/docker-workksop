@@ -103,4 +103,4 @@ Let's kill the container with the cute name.
 docker kill db
 ```
 
-That's a wrap for the basics. Let's [move on to the next section](https://github.com/gvilarino/docker-workshop/tree/master/1-running-containers).
+That's a wrap for the basics. Let's [move on to the next section](https://github.com/h-c-a/docker-workshop/tree/master/1-running-containers).

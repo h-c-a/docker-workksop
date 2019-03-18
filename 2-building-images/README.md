@@ -4,12 +4,23 @@
 
 A docker image is made of one or more layers. Each layer is built on top of the previous one and they're all immutable. This means you can't modify an existing layer, instead you create a new one made of changes from the previous layer. This is very similar to how `git`'s diff works.
 
-In order to build an image, you will need a `Dockerfile`. Try the calculator app in calculator folder `build` folder
+In order to build an image, you will need a `Dockerfile`. Try the calculator app in calculator folder `calculator/build` folder
 
 
 ```
 docker build -t add2-image .
 ```
+
+## use full commands
+
+`To remove all images`
+
+```
+docker rmi $(docker images -a -q)
+```
+
+Link to [`Cheat sheet`](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes#a-docker-cheat-sheet)
+
 
 ## Understanding layers and leveraging the cache
 
@@ -31,4 +42,4 @@ Now rebuild (it will rebuild all the first time), then change the text again in 
 
 Faster, right? 😎
 
-You may publish this image by using the command `docker push`, but you'll need an account in [`hub.docker.com`](https://hub.docker.com); you can do that later on your own. For now, let's [learn how to `docker-compose`](https://github.com/gvilarino/docker-workshop/tree/master/3-docker-compose)
+You may publish this image by using the command `docker push`, but you'll need an account in [`hub.docker.com`](https://hub.docker.com); you can do that later on your own. For now, let's [learn how to `docker-compose`](https://github.com/h-c-a/docker-workshop/tree/master/3-docker-compose)
