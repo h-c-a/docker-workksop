@@ -1,3 +1,13 @@
+service:
+  image: ubuntu:18.04
+  links:
+    - add
+    - subtract
+    - multiply
+    - divide 
+ # JUNK command to keep image running (otherwise the image would terminate after compose)
+ # easy to debug this way
+  command: tail -F anything
 add:
   build: .
   dockerfile: Dockerfile_add

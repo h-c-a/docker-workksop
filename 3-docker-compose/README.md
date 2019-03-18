@@ -36,10 +36,21 @@ You can see a simpler variation of `docker ps`, based on the items described in 
 
 Compare it to `docker ps`. They look alike, right? The difference is that containers names are generated as instances of the service, but the service itself is a compose-related concept.
 
-Browse the following and you'll see a familiar results.
+Browse the following from your local terminal and you'll see a familiar results.
 ```
 hcaadmin@Harwin:~% curl http://localhost:3000/add/?id=4%205 Your answer: 9 
 hcaadmin@Harwin:~% curl http://localhost:3001/subtract/?id=4%205 The answer is: -1 
 hcaadmin@Harwin:~% curl http://localhost:3002/multiply/?id=4%205 The answer is: 20 
 hcaadmin@Harwin:~% curl http://localhost:3003/divide/?id=4%205 The answer is: 0.8
+```
+
+Interestingly if you  `docker exec -it compose_service_1 bash`  ✨🐳
+
+the services are available by service names:
+
+```
+hcaadmin@Harwin:~% curl http://add:3000/add/?id=4%205 Your answer: 9 
+hcaadmin@Harwin:~% curl http://subtract:3001/subtract/?id=4%205 The answer is: -1 
+hcaadmin@Harwin:~% curl http://multiply:3002/multiply/?id=4%205 The answer is: 20 
+hcaadmin@Harwin:~% curl http://divide:3003/divide/?id=4%205 The answer is: 0.8
 ```
