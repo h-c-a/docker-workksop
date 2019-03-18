@@ -1,0 +1,20 @@
+add:
+  build: .
+  dockerfile: Dockerfile_add
+  ports:
+  - "3000:3000"
+subtract:
+  build: .
+  dockerfile: Dockerfile_sub
+  ports:
+  - "3001:3001"
+multiply:
+  build: .
+  dockerfile: Dockerfile_mul
+  ports:
+  - "3002:3002"
+divide:
+  build: .
+  dockerfile: Dockerfile_div
+  ports:
+  - "3003:3003"
