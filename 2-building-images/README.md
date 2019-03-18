@@ -11,6 +11,18 @@ In order to build an image, you will need a `Dockerfile`. Try the calculator app
 docker build -t add2-image .
 ```
 
+To see newly build image try
+
+```
+docker images
+```
+
+Try running the image and run
+
+```
+curl http://localhost:3000/add/?id=4%205
+```
+
 ## use full commands
 
 `To remove all images`
