@@ -25,6 +25,13 @@ curl http://localhost:3000/add/?id=4%205
 
 ## use full commands
 
+`One liner to stop / remove all of Docker containers:`
+
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
+
 `To remove all images`
 
 ```
