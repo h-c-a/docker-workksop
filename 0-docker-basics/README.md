@@ -45,11 +45,6 @@ So it stops after it runs? Let's try something else:
 ```
 docker run -it ubuntu:18.04
 ```
-So i need `curl`, with ubuntu
-
-```
-docker run ubuntu:18.04 apt-get update;apt-get install -y curl
-```
 
 Cool, we're inside the container! `-it` specifies you want to go into the interactive mode (TBH, `i` is interactive and `t` is for docker to allocate a pseudo TTY interface for the interaction)
 
