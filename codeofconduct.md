@@ -27,15 +27,15 @@ The workshop staff will be happy to help participants to assist those experienci
 
 We expect participants to follow these rules at our workshop and workshop venues and workshop-related social events.
 
-If you have any questions or suggestions about our Code of Conduct, do not hesitate to contact us.
+If you have any questions or suggestions about our Code of Conduct, do not hesitate to contact us.  
 
 
-The Docker Workshop
-CONTACT US
-Hari Charan Ayada
-hca@linkfire.com
 
-Jannik Jepsen
+The Docker Workshop  
+CONTACT US  
+Hari Charan Ayada  
+hca@linkfire.com  
+Jannik Jepsen  
 jj@linkfire.com
 
 
